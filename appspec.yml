@@ -6,10 +6,10 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/beforeInstall.sh
-      runas: deploy
+      runas: root
   ApplicationStart:
     - location: scripts/applicationStart.sh
-      runas: deploy
+      runas: root
 #   ApplicationStop:
 #     - location: scripts/applicationStop.sh
 #       runas: root

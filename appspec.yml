@@ -9,7 +9,7 @@ hooks:
       runas: deploy
   ApplicationStart:
     - location: scripts/applicationStart.sh
-      runas: root
+      runas: deploy
 #   ApplicationStop:
 #     - location: scripts/applicationStop.sh
 #       runas: root

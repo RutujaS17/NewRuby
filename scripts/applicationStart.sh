@@ -1,6 +1,6 @@
 # cd /var/www/apps/hello-world
 
-cd /home/deploy/ruby
+cd /home/ubuntu/ruby/
  # Pull the environment variables stored in parameter store and write it to a .env file
 
 # aws ssm get-parameters-by-path --region us-west-2 --path /hello-world/production/ --with-decryption \
@@ -10,5 +10,5 @@ cd /home/deploy/ruby
 #   value=$(echo $i | jq '.Value'| sed -e 's/^"//' -e 's/"$//'); echo $key=$value >> .env; done
 
 # Starting the server...
-
+bash -lc "bundle install"
 bash -lc "bundle exec rails server -b 0.0.0.0"

@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/bash
 
 rm -rf /var/www/ruby
 git clone https://github.com/JD4912/ruby_test.git /var/www/ruby
